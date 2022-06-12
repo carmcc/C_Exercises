@@ -1,53 +1,72 @@
-/**
-* simple calculator
-*/
 #include "operations.h"
-
-int main()
-{
+int main () {
     int choice, firstOperand, secondOperand;
     printf("Insert 1 for the sum\n");
     printf("Insert 2 for the subtraction\n");
     printf("Insert 3 for the multiplication\n");
     printf("Insert 4 for the division\n");
 
-    /**
-     * read choiced operation
-     */
+/**
+ * read choiced operation
+ */
     printf("Your choice: ");
     scanf("%d", &choice);
 
 
-    /**
-     * read the two operands
-     */
+/**
+ * read the two operands
+ */
     printf("Insert the first operand: ");
-    scanf("%d", firstOperand);
+    scanf("%d", &firstOperand);
 
     printf("Insert the second operand: ");
-    scanf("%d", secondOperand);
+    scanf("%d", &secondOperand);
 
-    switch (choice)
-    {
+
+    switch (choice) {
         case 1:
-            sum(firstOperand,secondOperand);
+            printf("Result: %lf",sum(firstOperand, secondOperand));
             break;
         case 2:
-            subtraction(firstOperand,secondOperand);
+            printf("Result: %lf",subtraction(firstOperand, secondOperand));
             break;
         case 3:
-            multiplication(firstOperand,secondOperand);
+            printf("Result: %lf",multiplication(firstOperand, secondOperand));
             break;
         case 4:
-            division(firstOperand,secondOperand);
+            printf("Result: %lf",division(firstOperand, secondOperand));
             break;
         default:
             printf("Invalid operation!");
             break;
     }
-
-
+    return 0;
 
 }
 
+/**
+ * methods implementations
+ */
+double sum(double a,double b)
+{
+    double result = a + b;
+    return result;
+}
 
+double subtraction(double a,double b)
+{
+    double result = a - b;
+    return result;
+}
+
+double multiplication(double a,double b)
+{
+    double result = a * b;
+    return result;
+}
+
+double division(double a,double b)
+{
+    double result = a / b;
+    return result;
+}
