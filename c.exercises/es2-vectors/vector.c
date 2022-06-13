@@ -15,6 +15,12 @@ int main()
     return 0;
 }
 
+/**
+ * This method calculates the number of elements in a vector of int terminated by END
+ * @param v
+ * @return the number of elements in a vector of int terminated by END
+ */
+
 int vectorLenght(int v[])
 {
     int counter = 0;
@@ -26,6 +32,12 @@ int vectorLenght(int v[])
     return counter;
 }
 
+/**
+ * This method modifies a vector terminated by END, setting to zero the elements
+ * whose index is listed in the vector index[]. Also index[] is terminated by END
+ * @param v
+ * @param index
+ */
 void resetVector(int v[], int index[])
 {
     for (int i = 0; i < vectorLenght(index); i++)
@@ -35,9 +47,12 @@ void resetVector(int v[], int index[])
             v[index[i]] = 0;
         }
     }
-
-
 }
+/**
+ * This method returns the sum of elements in a vector terminated by END
+ * @param v
+ * @return the sum of elements in a vector
+ */
 int vectorSum(int v[])
 {
     int sum = 0;
