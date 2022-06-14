@@ -12,9 +12,9 @@ int main ()
     printf("Pointer at char: %lu byte - Pointer at int: %lu byte\n\n", sizeof(char*), sizeof(int*));
 
     /*OUTPUT
-    *Char: 1 byte - Int: 4 byte
-    *Pointer at char: 8 byte - Pointer at int: 8 byte
-    * */
+     * Char: 1 byte - Int: 4 byte
+     * Pointer at char: 8 byte - Pointer at int: 8 byte
+     * */
 
     i_ptr = &i; //reference
     c_ptr = &c;
@@ -36,10 +36,13 @@ int main ()
     i = 12;
     printf("Value of i: %d - value of cell pointed by i_ptr: %d\n",i, *i_ptr);
 
-
     *i_ptr = 18; // *i_ptr = i, i_ptr and i are the same storage cell
     printf("Value of i: %d - value of cell pointed by i_ptr: %d\n",i, *i_ptr);
 
+    /*OUTPUT
+     * Value of i: 12 - value of cell pointed by i_ptr: 12
+     * Value of i: 18 - value of cell pointed by i_ptr: 18
+     * */
     return 0;
 
 }
