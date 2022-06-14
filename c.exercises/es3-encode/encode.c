@@ -13,7 +13,7 @@ int main()
 {
     char array [] = {'2','b','D','a','10','*','f','z','k','p'};
     int num;
-    printf("\n Inserisci un intero: ");
+    printf("\n Insert an integer: ");
 
     do
     {
