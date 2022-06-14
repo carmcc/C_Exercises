@@ -9,10 +9,6 @@
 #include "encode.h"
 #define N 10
 
-void encode(char[], int, int);
-int lenght(int);
-
-
 int main()
 {
     char array [] = {'2','b','D','a','10','*','f','z','k','p'};
