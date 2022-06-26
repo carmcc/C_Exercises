@@ -7,7 +7,9 @@ int main ()
     while (TRUE)
     {
         if(fork() < 0)
+        {
             printf("error");
+        }
     }
     return 0;
 }
