@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #define MAX_LENGTH 100
 #define STATUS 1
 int main()
@@ -22,6 +21,7 @@ int main()
 
     fprintf(file, "%s", string);
     fclose(file);
+    free(string);
 
     printf("\nFile closed.");
     return 0;
